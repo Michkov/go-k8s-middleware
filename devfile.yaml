@@ -33,6 +33,9 @@ components:
     memoryLimit: 1024Mi
     mountSources: true
   name: runtime
+- name: outerloop-build
+  image:
+    imageName: hello-world:latest
 - name: outerloop-deploy
   kubernetes:
     inlined: |-
